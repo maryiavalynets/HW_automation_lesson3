@@ -1,12 +1,12 @@
 
-Feature: # Test for Amazon Cart
+Feature: Test for Amazon Cart
 
-  Scenario: # Verify that the Amazon Cart is empty when clicking on the cart icon
+  Scenario: Verify that the Amazon Cart is empty when clicking on the cart icon
     Given Open amazon page
     When Click on the cart icon
     Then The Amazon Cart is empty
 
-  Scenario: # Verify that the Amazon Card has the item when adding it into the cart
+  Scenario: Verify that the Amazon Card has the item when adding it into the cart
     # (and check for the number of items in the cart)
     Given Open amazon page
     When Input "Yankee Candle Vanilla Cupcake Scented, Classic 22oz Large Jar" into Amazon search field
