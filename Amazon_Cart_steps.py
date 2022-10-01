@@ -14,4 +14,4 @@ def cart_has_product(context):
     expected_result = "Yankee Candle Vanilla Cupcake Scented"
     assert context.driver.find_element(By.XPATH, "//*[@id='activeCartViewForm']//img[contains(@alt,'Yankee Candle Vanilla Cupcake Scented')]").is_displayed(), f'Error! The cart does not have the {expected_result}.'
     assert "2" == context.driver.find_element(By.XPATH, "//*[@id='activeCartViewForm']//*[@id='a-autoid-5-announce']/span[2]").text, f'Error! Wrong quantity.'
-    print("Test case passed.")
+
